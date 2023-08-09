@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Dispositivos Electronicos</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="only screen and (max-width: 768px)"  href="Estilos3.css">
+    <title>Dispositivos Electronicos</title>
+
+    
+    <style>
+
+        body{
+
+            background-image: url('fondo2.jpg');
+           display: flex;
+           flex-wrap: wrap;
+            
+                
+        
+        }
+        body::-webkit-scrollbar{
+            display: none;
+        }
+        div{
+            position: relative;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            line-height: 80px;
+        
+        }
+        .text{
+            color: transparent;
+            -webkit-text-stroke: 1px
+            rgba(255, 255, 255, 0.6);
+        
+        }
+        .hover-text{
+            position: absolute;
+            inset: 0;
+            width: 0%;
+            color: #1af7ff;
+            overflow: hidden;
+            border-right: 6px solid #1af7ff;
+            transition: 0.5s ease-in-out;
+        }
+        div:hover .hover-text{
+            width: 110%;
+            filter: drop-shadow(0 0 40px #1af7ff);
+        }
+        section{
+            display: flex;
+            width: 1340px;
+            height: 500px;
+        
+        }
+        section img{
+            width: 0;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .8;
+            transition: .5s;
+        
+        }
+        section img:hover{
+            cursor: crosshair;
+            width: 500px;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+        
+        main{
+            position: absolute;
+            top: 120%;
+            left: 87%;
+            border-radius: 2rem;
+            display: flex;
+            
+          
+        }
+        .red{
+            border-radius: 200%;
+            border: 4px solid;
+            animation: parpadeo 4s linear infinite;
+        }
+        .link{
+            position: relative;
+            display: inline-block;
+        
+        }
+        @keyframes parpadeo{
+            0%{
+                border-bottom: red;
+        
+        
+            }
+            25%{
+                border-color: deeppink;
+            }
+            50%{
+                border-color: blue;
+        
+            }
+            75%{
+                border-color: yellow;
+            }
+            100%{
+                border-color: green;
+            }
+        }
+        h1{
+            position: absolute;
+        top: 260%;
+        left: 83%;
+        border-radius: 56rem;
+        display: flex;
+        flex-wrap: wrap;
+         }
+        .qr1{
+            position: relative;
+            display: inline-block;
+        }
+        .qr2{
+            border-radius: 300%;
+            border: 5px solid;
+            animation: parpadeo 4s linear infinite;
+        }
+        h2{
+            position: absolute;
+            top: 300%;
+            left: 83%;
+            border-radius: 10cm;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #info1{
+           position: absolute;
+           font-size: 25px;
+           color: cyan;
+           top: 95%;
+           left: 3%;
+        }
+        #info2{
+           position: absolute;
+           font-size: 25px;
+           color: cyan;
+           top: 105%;
+           left: 3%;
+        }
+        #info3{
+           position: absolute;
+           font-size: 25px;
+           color: cyan;
+           top: 120%;
+           left: 3%;
+        }
+        #info4{
+           position: absolute;
+           font-size: 25px;
+           color: cyan;
+           top: 135%;
+           left: 3%;
+        }
+        #info5{
+           position: absolute;
+           font-size: 25px;
+           color: cyan;
+           top: 150%;
+           left: 3%;
+        }
+        #info6{
+           position: absolute;
+           font-size: 25px;
+           color: cyan;
+           top: 165%;
+           left: 3%;
+        }
+        #info7{
+           position: absolute;
+           font-size: 25px;
+           color: cyan;
+           top: 180%;
+           left: 3%;
+        }
+        #info8{
+           position: absolute;
+           font-size: 25px;
+           color: cyan;
+           top: 195%;
+           left: 3%;
+        }
+        #infob{
+           position: absolute;
+           font-size: 19px;
+           color: white;
+           left: 22%;
+           top: 300%;
+          }
+      </style>
+  
+      <body>
+          <div>
+              <span class="text">&nbsp;Dispositivos Electronicos&nbsp;</span>
+              <span class="hover-text">&nbsp;Dispositivos Electronicos&nbsp;</span>
+           </div>
+  
+           <section>
+              <img src="WhDIE.jpg" alt="dis">
+              <img src="whDIE1.jpg" alt="dis">
+              <img src="whDIE2.jpg" alt="dis">
+              <img src="whDIE3.jpg" alt="dis">
+              <img src="whDIE4.jpg" alt="dis">
+           </section>
+           <main id="link">
+              <a href="https://wa.me/qr/5VIRD2LOLSMAN1"><img class="red" src="whatsa.jpeg" alt="lik" width="130px" height="120px"></a>
+             </main>
+  
+             <h3 id="info1">
+              1.-Semiconductores: Estudio de los materiales semiconductores, sus propiedades y características
+             </h3>
+             <h3 id="info2">
+              2.-Diodos: Estudio de los diodos, que son dispositivos electrónicos de dos terminales. Se analizan los diodos rectificadores, los diodos zener, los diodos emisores de luz (LED) y los diodos fotoeléctricos.
+             </h3>
+             <h3 id="info3">
+              3.-Transistores: Estudio de los transistores, que son dispositivos electrónicos de tres terminales utilizados <br>como amplificadores y conmutadores
+             </h3>
+             <h3 id="info4">
+              4.-Circuitos amplificadores: Estudio de los circuitos amplificadores utilizando transistores. Se abordan los amplificadores de pequeña señal, los amplificadores de potencia y los amplificadores operacionales
+             </h3>
+             <h3 id="info5">
+              5.-Circuitos integrados: Introducción a los circuitos integrados, que son dispositivos electrónicos que contienen múltiples componentes en un solo chip
+             </h3>
+             <h3 id="info6">
+              6.-Circuitos lógicos: Estudio de los circuitos lógicos digitales, que son dispositivos electrónicos utilizados para el procesamiento y la manipulación de señales digitales
+             </h3>
+             <h3 id="info7">
+              7.-Amplificadores operacionales: Estudio de los amplificadores operacionales, que son circuitos integrados utilizados para amplificar, filtrar y procesar señales analógicas
+             </h3>
+             <h3 id="info8">
+              8.-Dispositivos de estado sólido: Introducción a otros dispositivos electrónicos de estado sólido, como los sensores, los actuadores y los dispositivos de almacenamiento de información
+             </h3>
+  
+  
+  
+             <h3 id="infob">
+              Para mas informacion sobre los programas que se pueden ofrecer mandar mensaje a nuestro Whatsapp <br>
+              Podemos crear su codigo con las especificaciones que usted necesite <br>
+              Si usted lo que necesita es un curso sobbre programacion puede contactarno al mismo link o codigo QR <br>
+          </h3>
+  
+          <h1 id="qr1"><img class="qr2" src="qr.jpg" alt="linkqr" width="200px" height="300px"></h1>
+  
+  
+      </body>
+    
+    </html>

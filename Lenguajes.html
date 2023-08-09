@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Lenguajes Formales y Automatas </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="only screen and (max-width: 768px)"  href="Estilos3.css">
+    <title>Lenguajes Formales y Automatas</title>
+
+
+    <style>
+
+        body{
+
+            background-image: url('fondo2.jpg');
+           display: flex;
+           flex-wrap: wrap;
+            
+                
+        
+        }
+        body::-webkit-scrollbar{
+            display: none;
+        }
+        div{
+            position: relative;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            line-height: 80px;
+        
+        }
+        .text{
+            color: transparent;
+            -webkit-text-stroke: 1px
+            rgba(255, 255, 255, 0.6);
+        
+        }
+        .hover-text{
+            position: absolute;
+            inset: 0;
+            width: 0%;
+            color: #1af7ff;
+            overflow: hidden;
+            border-right: 6px solid #1af7ff;
+            transition: 0.5s ease-in-out;
+        }
+        div:hover .hover-text{
+            width: 110%;
+            filter: drop-shadow(0 0 40px #1af7ff);
+        }
+        section{
+            display: flex;
+            width: 1340px;
+            height: 500px;
+        
+        }
+        section img{
+            width: 0;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .8;
+            transition: .5s;
+        
+        }
+        section img:hover{
+            cursor: crosshair;
+            width: 500px;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+        
+        main{
+            position: absolute;
+            top: 120%;
+            left: 87%;
+            border-radius: 2rem;
+            display: flex;
+            
+          
+        }
+        .red{
+            border-radius: 200%;
+            border: 4px solid;
+            animation: parpadeo 4s linear infinite;
+        }
+        .link{
+            position: relative;
+            display: inline-block;
+        
+        }
+        @keyframes parpadeo{
+            0%{
+                border-bottom: red;
+        
+        
+            }
+            25%{
+                border-color: deeppink;
+            }
+            50%{
+                border-color: blue;
+        
+            }
+            75%{
+                border-color: yellow;
+            }
+            100%{
+                border-color: green;
+            }
+        }
+        h1{
+            position: absolute;
+        top: 260%;
+        left: 83%;
+        border-radius: 56rem;
+        display: flex;
+        flex-wrap: wrap;
+         }
+        .qr1{
+            position: relative;
+            display: inline-block;
+        }
+        .qr2{
+            border-radius: 300%;
+            border: 5px solid;
+            animation: parpadeo 4s linear infinite;
+        }
+        h2{
+            position: absolute;
+            top: 300%;
+            left: 83%;
+            border-radius: 10cm;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #info1{
+            position: absolute;
+            font-size: 25px;
+            color: cyan;
+            top: 95%;
+            left: 3%;   
+        }
+        #info2{
+            position: absolute;
+            font-size: 25px;
+            color: cyan;
+            top: 110%;
+            left: 3%;
+        }
+        #info3{
+            position: absolute;
+            font-size: 25px;
+            color: cyan;
+            top: 125%;
+            left: 3%;
+        }
+        #info4{
+            position: absolute;
+            font-size: 25px;
+            color: cyan;
+            top: 140%;
+            left: 3%;
+        }
+        #info5{
+            position: absolute;
+            font-size: 25px;
+            color: cyan;
+            top: 155%;
+            left: 3%;
+        }
+        #info6{
+            position: absolute;
+            font-size: 25px;
+            color: cyan;
+            top: 165%;
+            left: 3%;
+        }
+        #info7{
+            position: absolute;
+            font-size: 25px;
+            color: cyan;
+            top: 180%;
+            left: 3%;
+        }
+        #info8{
+            position: absolute;
+            font-size: 25px;
+            color: cyan;
+            top: 190%;
+            left: 3%;
+        }
+
+        #infob{
+            position: absolute;
+            font-size: 19px;
+            color: white;
+            left: 22%;
+            top: 300%;
+           }
+    </style>
+    <body>
+        <div>
+            <span class="text">&nbsp;Lenguajes Formales y Automatas&nbsp;</span>
+            <span class="hover-text">&nbsp;Lenguajes Formales y Automatas&nbsp;</span>
+        </div>
+        <main id="link">
+            <a href="https://wa.me/qr/5VIRD2LOLSMAN1"><img class="red" src="whatsa.jpeg" alt="lik" width="130px" height="120px"></a>
+           </main>
+           <section>
+            <img src="for1.jpeg" alt="for">
+            <img src="for2.png" alt="for">
+            <img src="for3.png" alt="for">
+            <img src="for4.png" alt="for">
+            <img src="for5.jpg" alt="for">
+            
+           </section>
+
+
+           <h3 id="info1">
+            1.-Alfabetos, lenguajes y gramáticas: Introducción a los conceptos básicos de lenguajes formales, incluyendo la definición <br>de alfabetos, lenguajes y gramáticas
+           </h3>
+           <h3 id="info2">
+            2.-Autómatas finitos: Estudio de los autómatas finitos como modelos matemáticos de sistemas de cómputo <br>on una memoria limitada
+           </h3>
+           <h3 id="info3">
+            3.-Expresiones regulares: Estudio de las expresiones regulares como herramientas para representar <br>patrones en cadenas de texto
+           </h3>
+           <h3 id="info4">
+            4.-Gramáticas libres de contexto: Estudio de las gramáticas libres de contexto y sus aplicaciones en el análisis sintáctico de lenguajes de programación
+           </h3>
+           <h3 id="info5">
+            5.-Máquinas de Turing: Introducción a las máquinas de Turing como modelos teóricos de cómputo
+           </h3>
+           <h3 id="info6">
+            6.-Análisis léxico y sintáctico: Estudio de técnicas y algoritmos para el análisis léxico y sintáctico de programas de computadora
+           </h3>
+           <h3 id="info7">
+            7.-Lenguajes formales y compiladores: Relación entre los lenguajes formales y la construcción de compiladores
+           </h3>
+           <h3 id="info8">
+            8.-Teoría de la computación: Estudio de la teoría de la computación, incluyendo conceptos como la decidibilidad, la complejidad computacional, las clases de complejidad y la reducibilidad
+           </h3>
+
+
+           <h3 id="infob">
+            Para mas informacion sobre los programas que se pueden ofrecer mandar mensaje a nuestro Whatsapp <br>
+            Podemos crear su codigo con las especificaciones que usted necesite <br>
+            Si usted lo que necesita es un curso sobbre programacion puede contactarno al mismo link o codigo QR <br>
+        </h3>
+
+        <h1 id="qr1"><img class="qr2" src="qr.jpg" alt="linkqr" width="200px" height="300px"></h1>
+
+
+    </body>
+</head>
+    
+    
+    
+    
+    
+    </html>

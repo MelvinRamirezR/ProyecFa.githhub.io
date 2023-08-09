@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Compiladores </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="only screen and (max-width: 768px)"  href="Estilos3.css">
+    <title>Compiladores</title>
+
+    <style>
+
+        body{
+
+            background-image: url('fondo2.jpg');
+           display: flex;
+           flex-wrap: wrap;
+            
+                
+        
+        }
+        body::-webkit-scrollbar{
+            display: none;
+        }
+        div{
+            position: relative;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            line-height: 80px;
+        
+        }
+        .text{
+            color: transparent;
+            -webkit-text-stroke: 1px
+            rgba(255, 255, 255, 0.6);
+        
+        }
+        .hover-text{
+            position: absolute;
+            inset: 0;
+            width: 0%;
+            color: #1af7ff;
+            overflow: hidden;
+            border-right: 6px solid #1af7ff;
+            transition: 0.5s ease-in-out;
+        }
+        div:hover .hover-text{
+            width: 110%;
+            filter: drop-shadow(0 0 40px #1af7ff);
+        }
+        section{
+            display: flex;
+            width: 1340px;
+            height: 500px;
+        
+        }
+        section img{
+            width: 0;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .8;
+            transition: .5s;
+        
+        }
+        section img:hover{
+            cursor: crosshair;
+            width: 500px;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+        
+        main{
+            position: absolute;
+            top: 120%;
+            left: 87%;
+            border-radius: 2rem;
+            display: flex;
+            
+          
+        }
+        .red{
+            border-radius: 200%;
+            border: 4px solid;
+            animation: parpadeo 4s linear infinite;
+        }
+        .link{
+            position: relative;
+            display: inline-block;
+        
+        }
+        @keyframes parpadeo{
+            0%{
+                border-bottom: red;
+        
+        
+            }
+            25%{
+                border-color: deeppink;
+            }
+            50%{
+                border-color: blue;
+        
+            }
+            75%{
+                border-color: yellow;
+            }
+            100%{
+                border-color: green;
+            }
+        }
+        h1{
+            position: absolute;
+        top: 260%;
+        left: 83%;
+        border-radius: 56rem;
+        display: flex;
+        flex-wrap: wrap;
+         }
+        .qr1{
+            position: relative;
+            display: inline-block;
+        }
+        .qr2{
+            border-radius: 300%;
+            border: 5px solid;
+            animation: parpadeo 4s linear infinite;
+        }
+        h2{
+            position: absolute;
+            top: 300%;
+            left: 83%;
+            border-radius: 10cm;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #info1{
+         position: absolute;
+         font-size: 25px;
+         color: cyan;
+         top: 95%;
+         left: 3%;
+        }
+        #info2{
+            position: absolute;
+         font-size: 25px;
+         color: cyan;
+         top: 104%;
+         left: 3%;
+        }
+        #info3{
+            position: absolute;
+         font-size: 25px;
+         color: cyan;
+         top: 115%;
+         left: 3%;
+        }
+        #info4{
+            position: absolute;
+         font-size: 25px;
+         color: cyan;
+         top: 130%;
+         left: 3%;
+        }
+        #info5{
+            position: absolute;
+         font-size: 25px;
+         color: cyan;
+         top: 145%;
+         left: 3%;
+        }
+        #info6{
+            position: absolute;
+         font-size: 25px;
+         color: cyan;
+         top: 160%;
+         left: 3%;
+        }
+        #info7{
+            position: absolute;
+         font-size: 25px;
+         color: cyan;
+         top: 175%;
+         left: 3%;
+        }
+        #info8{
+            position: absolute;
+         font-size: 25px;
+         color: cyan;
+         top: 185%;
+         left: 3%;
+        }
+        #infob{
+         position: absolute;
+         font-size: 19px;
+         color: white;
+         left: 22%;
+         top: 300%;
+        }
+
+
+
+      </style>
+        <body>
+          <div>
+             <span class="text">&nbsp;Compiladores&nbsp;</span>
+             <span class="hover-text">&nbsp;Compiladores&nbsp;</span>
+             </div>
+          <main id="link">
+             <a href="https://wa.me/qr/5VIRD2LOLSMAN1"><img class="red" src="whatsa.jpeg" alt="lik" width="130px" height="120px"></a>
+           </main>
+
+
+           <section>
+             <img src="comp1.png" alt="com">
+             <img src="comp2.png" alt="com">
+             <img src="comp3.png" alt="com">
+             <img src="comp4.png" alt="com">
+             <img src="comp5.png" alt="com">
+           </section>
+
+           <h3 id="info1">
+            1.-Introducción a los compiladores: Conceptos básicos de compilación, fases del proceso de compilación
+           </h3>
+           <h3 id="info2">
+            2.-Análisis léxico: Estudio del análisis léxico, que consiste en la identificación y clasificación de los componentes léxicos (tokens)
+           </h3>
+           <h3 id="info3">
+            3.-Análisis sintáctico verifica la estructura gramatical de un programa fuente mediante la construcción <br>de un árbol de análisis sintáctico
+           </h3>
+           <h3 id="info4">
+            4.-Análisis semántico: Estudio del análisis semántico, que verifica la coherencia y consistencia del <br>significado de un programa fuente
+           </h3>
+           <h3 id="info5">
+            5.-Generación de código intermedio: Estudio de la generación de código intermedio a partir del análisis del programa fuente
+           </h3>
+           <h3 id="info6">
+            6.-Optimización de código: Estudio de técnicas y algoritmos para mejorar la eficiencia y rendimiento del código generado por el compilador.
+           </h3>
+           <h3 id="info7">
+            7.-Generación de código objetivo: Estudio de la generación de código objetivo a partir del código intermedio
+           </h3>
+           <h3 id="info8">
+            8.-Herramientas y compiladores modernos: Introducción a herramientas y tecnologías modernas para el desarrollo de compiladores
+           </h3>
+
+
+           <h3 id="infob">
+            Para mas informacion sobre los programas que se pueden ofrecer mandar mensaje a nuestro Whatsapp <br>
+            Podemos crear su codigo con las especificaciones que usted necesite <br>
+            Si usted lo que necesita es un curso sobbre programacion puede contactarno al mismo link o codigo QR <br>
+        </h3>
+
+        <h1 id="qr1"><img class="qr2" src="qr.jpg" alt="linkqr" width="200px" height="300px"></h1>
+
+        </body>
+  </head>
+
+
+
+
+
+
+
+
+    </html>

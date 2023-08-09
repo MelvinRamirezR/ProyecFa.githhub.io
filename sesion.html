@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Materias </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="only screen and (max-width: 768px)"  href="Estilos.css">
+    <title>Materias</title>
+
+    <style>
+
+        body{
+
+            background-image: url('fondo2.jpg');
+            display: flex;
+            flex-wrap: wrap;
+            
+        
+        }
+        section{
+            display: flex;
+            width: 600px;
+            height: 430px;
+            
+        }
+        
+        section a img{
+            width: 194px;
+            height: 550px;
+            
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .8;
+            transition: .5s ease;
+        }
+        section a img :hover{
+            cursor: crosshair;
+            width: 300px;
+            opacity: 1;
+            filter: contrast(120%);
+        
+        }
+        button{
+            font-family: system-ui;
+            font-size: 18px;
+            font-weight: bold ;
+            border: none;
+            color: white;
+            background-color: #6b6b6b;
+            padding: 0.6rem 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            
+        
+        }
+        button:hover{
+            background-image: linear-gradient(90deg,
+            #fa8bff 0%,
+            #2bd2ff 50%,
+            #2bff88 75%,
+            #fa8bff 100%
+            );
+            color: black;
+            animation: slide 7s linear infinite;
+        }
+        @keyframes slide{
+            100%{
+                background-position: 20rem;
+            }
+        }
+        
+        
+        #Titulo{
+        position: absolute;
+        top: 90%;
+        left: 35%;
+        color: white;
+        font-size: 45px;
+        display: flex;
+        
+           
+        }
+        #titulo2{
+           position: absolute;
+           top: 84%;
+           left: 5%;
+           color: white;
+           font-size: 25px;
+           display: flex;
+        }
+        #titulo3{
+           position: absolute;
+           top: 84%;
+           left: 18%;
+           color: white;
+           font-size: 25px;
+           display: flex;
+        }
+        #titulo4{
+           position: absolute;
+           top: 84%;
+           left: 31.5%;
+           color: white;
+           font-size: 23px;
+           display: flex;
+        }
+        #titulo5{
+           position: absolute;
+           top: 84%;
+           left: 43.5%;
+           color: white;
+           font-size: 23px;
+  
+        }
+        #titulo6{
+           position: absolute;
+           top: 84%;
+           left: 59%;
+           color: white;
+           font-size: 23px;
+        }
+        #titulo7{
+           position: absolute;
+           top: 84%;
+           left: 74%;
+           color: white;
+           font-size: 25px;
+  
+        }
+        #titulo8{
+           position: absolute;
+           top: 84%;
+           left: 90%;
+           color: white;
+           font-size: 25px;
+        }
+        #siguiente{
+           position: absolute;
+           top: 92%;
+           left: 82%;
+        }
+      
+      </style>
+
+      <body>
+        <div id="Titulo">Boveda de Programas</div>
+        <section>
+           <a href="Poo.html"><img src="poo.jpg" alt="Programacion" ><h2 id="titulo2">POO</h2></a>
+           <a href="Estructura.html"><img src="estructura.jpg" alt="estructuras"><h2 id="titulo3">Estructura</h2></a>
+           <a href="Base.html"><img src="Base.jpg" alt="datos"><h2 id="titulo4">Base de datos</h2></a>
+           <a href="Web.html"><img src="web.jpg" alt="proweb"><h2 id="titulo5">Programacion Web</h2></a>
+           <a href="Compiladores.html"><img src="compiladores.jpg" alt="compi"><h2 id="titulo6">Compiladores</h2></a>
+           <a href="Diseño.html"><img src="algo2.jpeg" alt="algoritmos"><h2 id="titulo7">Algoritmos</h2></a>
+          <a href="Lenguajes.html"> <img src="formales.png" alt="forma"><h2 id="titulo8">Lenguajes</h2></a>
+        </section>
+        
+  
+        <a href="sesion2.html"><button id="siguiente">Siguiente Pagina</button></a>
+      </body>
+
+    </html>

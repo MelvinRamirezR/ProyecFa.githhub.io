@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Diseño de Sistemas Digitales </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="only screen and (max-width: 768px)"  href="Estilos3.css">
+    <title>Diseño de Sistemas Digitales</title>
+
+
+    <style>
+
+        body{
+
+            background-image: url('fondo2.jpg');
+           display: flex;
+           flex-wrap: wrap;
+            
+                
+        
+        }
+        body::-webkit-scrollbar{
+            display: none;
+        }
+        div{
+            position: relative;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            line-height: 80px;
+        
+        }
+        .text{
+            color: transparent;
+            -webkit-text-stroke: 1px
+            rgba(255, 255, 255, 0.6);
+        
+        }
+        .hover-text{
+            position: absolute;
+            inset: 0;
+            width: 0%;
+            color: #1af7ff;
+            overflow: hidden;
+            border-right: 6px solid #1af7ff;
+            transition: 0.5s ease-in-out;
+        }
+        div:hover .hover-text{
+            width: 110%;
+            filter: drop-shadow(0 0 40px #1af7ff);
+        }
+        section{
+            display: flex;
+            width: 1340px;
+            height: 500px;
+        
+        }
+        section img{
+            width: 0;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .8;
+            transition: .5s;
+        
+        }
+        section img:hover{
+            cursor: crosshair;
+            width: 500px;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+        
+        main{
+            position: absolute;
+            top: 120%;
+            left: 87%;
+            border-radius: 2rem;
+            display: flex;
+            
+          
+        }
+        .red{
+            border-radius: 200%;
+            border: 4px solid;
+            animation: parpadeo 4s linear infinite;
+        }
+        .link{
+            position: relative;
+            display: inline-block;
+        
+        }
+        @keyframes parpadeo{
+            0%{
+                border-bottom: red;
+        
+        
+            }
+            25%{
+                border-color: deeppink;
+            }
+            50%{
+                border-color: blue;
+        
+            }
+            75%{
+                border-color: yellow;
+            }
+            100%{
+                border-color: green;
+            }
+        }
+        h1{
+            position: absolute;
+        top: 260%;
+        left: 83%;
+        border-radius: 56rem;
+        display: flex;
+        flex-wrap: wrap;
+         }
+        .qr1{
+            position: relative;
+            display: inline-block;
+        }
+        .qr2{
+            border-radius: 300%;
+            border: 5px solid;
+            animation: parpadeo 4s linear infinite;
+        }
+        h2{
+            position: absolute;
+            top: 300%;
+            left: 83%;
+            border-radius: 10cm;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #info1{
+            position: absolute;
+            font-size: 25px;
+            color: cyan;
+            top: 95%;
+            left: 3%;
+        }
+        #info2{
+            position: absolute;
+            font-size: 25px;
+            color: cyan;
+            top: 115%;
+            left: 3%;
+        }
+        #info3{
+            position: absolute;
+            font-size: 25px;
+            color: cyan;
+            top: 130%;
+            left: 3%;
+        }
+        #info4{
+            position: absolute;
+            font-size: 25px;
+            color: cyan;
+            top: 145%;
+            left: 3%;
+        }
+        #info5{
+            position: absolute;
+            font-size: 25px;
+            color: cyan;
+            top: 155%;
+            left: 3%;
+        }
+        #info6{
+            position: absolute;
+            font-size: 25px;
+            color: cyan;
+            top: 170%;
+            left: 3%;
+        }
+        #info7{
+            position: absolute;
+            font-size: 25px;
+            color: cyan;
+            top: 185%;
+            left: 3%;
+        }
+        #info8{
+            position: absolute;
+            font-size: 25px;
+            color: cyan;
+            top: 200%;
+            left: 3%;
+        }
+        
+        #infob{
+            position: absolute;
+            font-size: 19px;
+            color: white;
+            left: 22%;
+            top: 300%;
+           }
+    </style>
+
+
+    <body>
+        <div>
+            <span class="text">&nbsp;Diseño de Sistemas Digitales&nbsp;</span>
+            <span class="hover-text">&nbsp;Diseño de Sistemas Digitales&nbsp;</span>
+        </div>
+        <section>
+            <img src="DiSis1.png" alt="DS">
+            <img src="DiSis2.png" alt="DS">
+            <img src="DiSis3.png" alt="DS">
+            <img src="DiSis4.jpg" alt="DS">
+            <img src="DiSis5.png" alt="DS">
+        </section>
+        <main id="link">
+            <a href="https://wa.me/qr/5VIRD2LOLSMAN1"><img class="red" src="whatsa.jpeg" alt="lik" width="130px" height="120px"></a>
+           </main>
+
+           <h3 id="info1">
+            1.-Circuitos combinacionales: Estudio de los circuitos combinacionales, que son circuitos digitales en los que la salida depende únicamente de las entradas actuales. Se abordan conceptos como puertas lógicas, decodificadores, codificadores, multiplexores y demultiplexores
+           </h3>
+           <h3 id="info2">
+            2.-Circuitos secuenciales: Estudio de los circuitos secuenciales, que son circuitos digitales en los que <br>la salida depende de las entradas actuales y de la historia de las entradas previas.
+           </h3>
+           <h3 id="info3">
+            3.-Arquitectura de computadoras: Estudio de la arquitectura de computadoras y el diseño de sistemas <br>basados en microprocesadores.
+           </h3>
+           <h3 id="info4">
+            4.-Circuitos integrados digitales: Estudio de los circuitos integrados digitales y su aplicación en sistemas digitales
+           </h3>
+           <h3 id="info5">
+            5.-Diseño de circuitos secuenciales: Técnicas y metodologías para el diseño de circuitos secuenciales, incluyendo la síntesis de circuitos a partir de especificaciones y la implementación en hardware utilizando lenguajes de descripción de hardware.
+           </h3>
+           <h3 id="info6">
+            6.-Sistemas de control digital: Estudio de los sistemas de control digital, que utilizan técnicas de diseño de sistemas digitales para controlar procesos y sistemas en tiempo real.
+           </h3>
+           <h3 id="info7">
+            7.-Verificación y validación de sistemas digitales: Métodos y técnicas para la verificación y validación de sistemas digitales, incluyendo pruebas funcionales, simulación, técnicas de verificación formal y análisis de cobertura
+           </h3>
+           <h3 id="info8">
+            8.-Diseño de sistemas embebidos: Introducción al diseño de sistemas embebidos, que son sistemas digitales integrados en dispositivos y aplicaciones específicas.
+           </h3>
+
+
+           <h3 id="infob">
+            Para mas informacion sobre los programas que se pueden ofrecer mandar mensaje a nuestro Whatsapp <br>
+            Podemos crear su codigo con las especificaciones que usted necesite <br>
+            Si usted lo que necesita es un curso sobbre programacion puede contactarno al mismo link o codigo QR <br>
+        </h3>
+
+        <h1 id="qr1"><img class="qr2" src="qr.jpg" alt="linkqr" width="200px" height="300px"></h1>
+        
+
+    </body>
+</head>
+    
+    
+    </html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Laboratrios</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="only screen and (max-width: 768px)"  href="Estilos2.css">
+    <title>Laboratorios</title>
+
+    <style>
+
+        body{
+
+            background-image: url('fondo2.jpg');
+            display: flex;
+            flex-wrap: wrap;
+        
+                
+        
+        }
+        div{
+            position: relative;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            line-height: 80px;
+        
+        }
+        .text{
+            color: transparent;
+            -webkit-text-stroke: 1px
+            rgba(255, 255, 255, 0.6);
+            
+        
+        }
+        .hover-text{
+            position: absolute;
+            inset: 0;
+            width: 0%;
+            color: #1af7ff;
+            overflow: hidden;
+            border-right: 6px solid #1af7ff;
+            transition: 0.5s ease-in-out;
+        }
+        div:hover .hover-text{
+            width: 100%;
+            filter: drop-shadow(0 0 40px #1af7ff);
+        }
+        
+        h1{
+            font-size: 88px;
+            font-weight: 800;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: white;
+            text-align: center;
+            position: relative;
+        
+        }
+        h1::before,
+        h1::after{
+            content: attr(data-text);
+            position: absolute;
+            top: 0px;
+            left: 65.3px;
+            transition: 0.3s ease-in-out;
+        }
+        h1:hover::before{
+            color: #bb0000;
+            transform: translate(12px, -12px);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        
+        }
+        h1:hover::after{
+            color: #77efff;
+            transform: translate(24px, -24px);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+        section{
+            display: flex;
+            width: 600px;
+            height: 430px;
+            
+        }
+        
+        section img{
+            width: 339px;
+            height: 550px;
+            
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .8;
+            transition: .5s ease;
+        }
+        section img :hover{
+            cursor: crosshair;
+            width: 300px;
+            opacity: 1;
+            filter: contrast(120%);
+        
+        }
+        button{
+            font-family: system-ui;
+            font-size: 18px;
+            font-weight: bold ;
+            border: none;
+            color: white;
+            background-color: #6b6b6b;
+            padding: 0.6rem 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            display: flex;
+            flex-wrap: wrap;
+            
+        
+        }
+        button:hover{
+            background-image: linear-gradient(90deg,
+            #fa8bff 0%,
+            #2bd2ff 50%,
+            #2bff88 75%,
+            #fa8bff 100%
+            );
+            color: black;
+            animation: slide 7s linear infinite;
+        }
+        @keyframes slide{
+            100%{
+                background-position: 20rem;
+            }
+        }
+
+        #Titulo1{
+            position: absolute;
+            top: 87.5%;
+            left: 40%;
+            color: white;
+            font-size: 45px;
+        }
+        #title{
+            position: absolute;
+            top: 84%;
+            left: 3%;
+            color: white;
+        }
+       #title2{
+        position: absolute;
+        top: 84%;
+        left: 28%;
+        color: white;    
+    }
+    #title3{
+        position: absolute;
+        top: 84%;
+        left: 57%;
+        color: white;    
+    }
+    #title4{
+        position: absolute;
+        top: 84%;
+        left: 77%;
+        color: white;    
+    }
+    #anterior{
+        position: absolute;
+        top: 92%;
+        left: 3%;
+     }
+     #siguiente{
+        position: absolute;
+        top: 92%;
+        left: 82%;
+     }
+    </style>
+    <body>
+        
+        <div id="Titulo1">Laboratorios</div>
+        <section>
+            <a href="electricidad.html"><img src="magnetismo.jpg" alt="magnetismo"><h2 id="title">Electricidad y Magnetismo</h2></a>
+            <a href="Dispositivos.html"><img src="Dispositivos.jpeg" alt="dispositivos"><h2 id="title2">Dispositivos Electronicos</h2></a>
+            <a href="DiseñoLO.html"><img src="DiseñoLO1.jpg" alt="logico"><h2 id="title3">Diseño Logico</h2></a>
+            <a href="Digitales.html"><img src="digitales1.png" alt="digitales"><h2 id="title4">Diseño de Sistemas Digitales</h2></a>
+
+        </section>
+
+        <a href="sesion.html"><button id="anterior">Pagina Anterior</button></a>
+            
+        <a href="sesion3.html"><button id="siguiente">Siguiente Pagina</button></a>
+    </body>
+
+
+
+
+
+
+    </html>
